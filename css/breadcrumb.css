@@ -1,0 +1,36 @@
+.breadcrumb-area {
+    padding-top: 20px;
+    padding-bottom: 28px;
+    padding-left: 5%;
+    color: white;
+    font-size: 20px;
+}
+
+.breadcrumb-list {
+    display: flex;
+}
+
+.breadcrumb-item {
+    display: flex;
+}
+
+.breadcrumb-item +.breadcrumb-item:before {
+    content:">";
+    padding: 0 5px;
+}
+
+.breadcrumb-area a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+@media print, screen and (max-width: 768px) {
+    .breadcrumb-area {
+        font-size: 15px;
+    }
+    .breadcrumb-area a {
+        font-size: 15px;
+    }
+}

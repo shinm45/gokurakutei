@@ -1,0 +1,150 @@
+.blog-top {
+    background-image: url(../image/street.png);
+    background-position: center;
+    background-size: cover;
+    height: 296px;
+}
+
+.article-cont {
+    max-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 76px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0 auto;
+}
+
+
+.article-item +.article-item {
+    padding-top: 50px;
+}
+
+.article-item a {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media print, screen and (max-width: 768px) {
+    .article-item a {
+        flex-direction: column-reverse;
+    }
+}
+
+.article-text {
+    color: white;
+    margin-left: 32px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media print, screen and (max-width: 768px) {
+    .article-text {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+.article-text .time {
+    font-size: 16px;
+}
+
+.article-text .title {
+    font-size: 28px;
+}
+
+.article-text .desc {
+    font-size: 24px;
+}
+
+@media print, screen and (max-width: 768px) {
+    .article-text .time {
+        margin-top: 20px;
+    }
+
+    .article-text .title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .article-text .desc {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+.article-image {
+    width: 250px;
+    height: 180px;
+    position: relative;
+}
+
+.article-image .category {
+    position: absolute;
+    color: white;
+    background-color: #4D0000;
+    text-align: center;
+    line-height: 32px;
+    width: 120px;
+    height: 32px;
+}
+
+.article-image .image img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+@media print, screen and (max-width: 768px) {
+    .article-image {
+        margin: 0 auto;
+        width: calc(100vw - 100px);
+        height: calc((100vw - 100px) * 0.72);
+    }
+    .article-image .image img {
+        width: 100%;
+        height: calc((100vw - 100px) * 0.72);
+    }
+}
+
+.article-pager {
+    padding-bottom: 120px;
+}
+
+.article-pager .inner {
+    display: flex;
+    justify-content: center;
+}
+
+.article-pager .inner .number:first-child {
+    background-color: #B8860B;
+}
+
+.article-pager .number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: #B8860B solid 1px;
+}
+
+.article-pager .number + .number{
+    margin-left: 20px;
+}
+
+.dots {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.dots span {
+    color: white;
+}
+
+
+.article-pager .number span {
+    color: white;
+}
